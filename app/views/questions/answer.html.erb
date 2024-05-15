@@ -1,3 +1,17 @@
-<h1>Stupid Coaching</h1>
-<h3><%= @question %></h3>
-<h3><%= @coach_answer %></h3>
+<div class="m-2">
+  <p class="h1">Stupid Coaching</p>
+</div>
+
+<div class="bg-secondary p-2 m-2 bg-gradient -bg-opacity-50">
+  <blockquote class="blockquote"><p><%= @question %></p></blockquote>
+  <p><i>-You</i></p>
+</div>
+
+<div class="bg-warning p-2 m-2 bg-gradient -bg-opacity-10">
+  <blockquote class="blockquote"><p><%= @coach_answer %></p></blockquote>
+  <p><i>-Your coach</i></p>
+</div>
+
+<div class="m-3">
+  <%= link_to "Ask a new question", ask_path %>
+</div>
